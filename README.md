@@ -14,5 +14,5 @@ mobile version -> in progress
 
 ## Demo
 
-Try this working demo: [VAFI]()
+Try this working demo: [VAFI](https://rso21.github.io/VAFI_RWD/)
 
