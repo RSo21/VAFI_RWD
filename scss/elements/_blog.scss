@@ -1,0 +1,138 @@
+hr{
+    width: 90%;
+}
+
+.blog-logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em;  
+    font-size: 2em;
+    color: gray;
+    width: 100%;
+
+    @include mobile{
+        width: 100%;
+    }
+}
+
+.blog-text-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em; 
+    font-size: 3em;
+
+    @include mobile{
+        width: 100%;
+    }
+
+}
+
+.blog-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    padding: 2em 6em;
+
+    @include mobile{
+        width: 100%;
+        font-size: 0.8em
+    }
+    p{
+        line-height: 2em;
+    }
+}
+
+.blog-button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2em 0;
+
+    @include mobile{
+        width: 100%;
+        padding: 2em 2em;
+    }
+
+    .blog-btn{
+        border: 0.09em solid black;
+        background-color: white;
+        padding: 1em 3em;
+        font-weight: 700;
+        color: black;
+
+        a{
+            color: $mainColor;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+
+        
+    }
+}
+
+
+.blog-foto-first{
+    padding: 1em 2em;
+
+    img{
+        width: 40em;
+    }
+}
+
+.blog-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    img{
+       width: 50em;
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    @include mobile{
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+.blog-double-foto{
+    padding: 0em 2em;
+
+    @include mobile{
+        display: flex;
+        flex-direction: row;
+        padding: 1em 0;
+        max-width: 100%;
+    }
+
+    img{
+        width: 110%;
+        height: 50%;
+
+        @include mobile {
+            height: 100%;
+        }
+    }
+
+    img:first-of-type{
+        padding-bottom: 1.1em;
+
+        @include mobile {
+            padding-right: 1.4em;
+        }
+    }
+}
+
+

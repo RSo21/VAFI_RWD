@@ -1,0 +1,86 @@
+// @media only screen and (max-width: 979px) {
+    .mobile-nav{
+        display: block;
+
+        @include desktop{
+            display: none;
+        }
+    }
+
+
+/*Func*/
+
+.multi-level, .item ul, .mobile-nav input[type="checkbox"] {
+    display: none;
+}
+#menu:checked ~ .multi-level, .item input:checked ~ ul {
+    display: block;
+}
+
+/*Arrow*/
+
+.icon-ico_arrow-down {
+    font-size: 0.1em;
+    vertical-align: middle;
+    float: left;
+    z-index: 0;
+    padding: 2em 0 0 2em;
+}
+.item input + .icon-ico_arrow-down {
+    transform: rotate(-90deg);
+    transition: 0.1s;
+}
+.item input:checked + .icon-ico_arrow-down {
+    transform: rotate(0deg);
+    transition: 0.1s;
+}
+
+
+
+/*Styles*/
+
+label:hover {
+    cursor: pointer;
+}
+label {
+    width: 100%;
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+.mobile-nav {
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+    border-bottom: 1px solid #CFD8DC;
+}
+
+#nav-icon {
+    font-size: 1.5em;
+    color: black;
+    padding-left: 0.5em;
+}
+
+.mobile-nav ul, .mobile-nav li, label {
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0 2em;
+    list-style: none;
+    text-decoration: none;
+    color: $secondaryColor;
+    font-weight: 100;
+    width: 100%;
+}
+.item ul {
+    padding: 0 0.25em;
+}
+.mobile-nav li a {
+    //line-height: 50px;
+    margin: 0;
+    padding: 0 4em;
+    list-style: none;
+    text-decoration: none;
+    color: $secondaryColor;
+    font-weight: 100;
+}
+

@@ -1,0 +1,148 @@
+.desktop-nav{
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    content: "";
+    z-index: 2;
+    position: relative;
+
+    @include mobile {
+        display: none;
+    }
+
+
+
+ul {
+    list-style: none;
+    position: absolute;
+}
+
+ul > li {
+    margin: 0;
+    padding: 0;
+    float: left; 
+    position: relative;
+    height: 6em;
+}
+
+ul > li > a {
+    padding: 2em; 
+    color: $mainColor;
+    text-decoration: none;
+}
+
+ul > li > a:hover, 
+ul > li:hover > a {
+    color: $secondaryColor;
+    text-decoration: none;
+}
+
+ul > li ul {
+    padding: 0;
+    position: absolute; 
+    display: none; 
+    left: 0px; 
+    width: 200px; 
+    text-align: left;
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul > li ul ul {
+    left: 200px; 
+    top: -1px;
+}
+
+ul > li ul li {
+    margin: 0; 
+    padding: 0;
+    position: relative; 
+    float: none; 
+    height: auto;
+}
+
+ul > li ul li a {
+    padding: 10px 20px; 
+    color: #505050; 
+    text-decoration: none;
+    display: block;
+}
+
+ul > li ul li a:hover,
+ul > li ul li:hover > a {
+    text-decoration: none;
+    color: #fff;
+    background-color: $secondaryColor;
+}
+ul {
+    list-style: none;
+    float: left;
+}
+
+ul > li {
+    margin: 0;
+    padding: 0;
+    float: left; 
+    position: relative;
+    height: 30px;
+}
+
+ul > li > a {
+    padding: 10px; 
+    color: #444;
+    text-decoration: none;
+}
+
+ul > li > a:hover, 
+ul > li:hover > a {
+    color: $secondaryColor;
+    text-decoration: none;
+}
+
+ul > li ul {
+    padding: 0;
+    position: absolute; 
+    display: none; 
+    left: 0px; 
+    top: 30px; 
+    width: 200px; 
+    text-align: left;
+    background-color: $navColor;
+    border: 1px solid #ccc;
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul > li ul ul {
+    left: 200px; 
+    top: -1px;
+}
+
+ul > li ul li {
+    margin: 0; 
+    padding: 0;
+    position: relative; 
+    float: none; 
+    height: auto;
+}
+
+ul > li ul li a {
+    padding: 10px 20px; 
+    color: #505050; 
+    text-decoration: none;
+    display: block;
+}
+
+ul > li ul li a:hover,
+ul > li ul li:hover > a {
+    text-decoration: none;
+    color: #fff;
+    background-color: $secondaryColor;
+}
+}

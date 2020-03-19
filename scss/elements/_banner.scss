@@ -1,0 +1,66 @@
+.banner{
+    // position: absolute;
+    .banner-photo{
+        // background: url(../assets/banner1_c.jpeg);
+        padding:0;
+        margin: 0;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: auto;
+        img{
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: auto;
+            position: relative;
+        }
+    }
+
+    .banner-text{
+        width: 40vw;
+        height: 30vh;
+        background-color: #FFF;
+        opacity: 0.8;
+        top: 20vh;
+        left: 30vw;
+        content: "";
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @include mobile{
+            top: 5vh;
+            width: 20vh;
+            height: 14vh;
+        }
+
+        p{
+            font-size: 2em;
+            padding-bottom: 1em;
+            opacity: 1;
+
+            @include mobile {
+                font-size: 1em;
+            }
+        }
+
+        .banner-btn{
+            color: #FFF;
+            background-color: $secondaryColor;
+            padding: 1em 4em;
+            opacity: 1;
+
+            @include mobile {
+                padding: 0.5em 2em;
+            }
+        }
+    }
+}

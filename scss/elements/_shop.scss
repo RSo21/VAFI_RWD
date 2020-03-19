@@ -1,0 +1,54 @@
+.shop-logo{
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.4;
+
+    img{
+        width: 4em;
+        height: 4em;
+    }
+
+}
+
+.shop-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 3em;
+
+    @include mobile{
+        padding: 0.5em 0;
+    }
+}
+
+.shop-photo{
+    .shop-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 4em 0;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            padding: 2em 0;
+        }
+
+        img{
+            width: 25em;
+            height: 15em;
+            padding-right: 1.5em;
+
+            @include mobile{
+                padding: 1.1em 2em;
+            }
+        }
+
+    }
+}
+
+
