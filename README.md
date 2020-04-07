@@ -1,5 +1,7 @@
 # VAFI_SHOP_RWD
 
+## General info
+
 This project is an exercise in creating a responsive website. Only
 desktop and mobile version. 
 
