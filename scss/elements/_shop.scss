@@ -8,6 +8,11 @@
     img{
         width: 4em;
         height: 4em;
+
+        @include mobile{
+            width: 3em;
+            height: 3em;
+        }
     }
 
 }
@@ -21,6 +26,7 @@
 
     @include mobile{
         padding: 0.5em 0;
+        font-size: 2em;
     }
 }
 
@@ -35,7 +41,7 @@
         @include mobile{
             display: flex;
             flex-direction: column;
-            padding: 2em 0;
+            padding: 0.5em 0;
         }
 
         img{
@@ -44,6 +50,8 @@
             padding-right: 1.5em;
 
             @include mobile{
+                width: 100vw;
+                height: auto;
                 padding: 1.1em 2em;
             }
         }

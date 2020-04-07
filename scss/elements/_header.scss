@@ -33,7 +33,7 @@ body{
 
 header{
     .blackweek{
-        background-color: #313131;
+        background-color: $secondaryColor;
         color: #fff;
         display: flexbox;
         justify-content: center;
@@ -110,6 +110,12 @@ header{
             width: 6em;
             height: 6em;
             opacity: 0.5;
+
+            @include mobile{
+                width: 4em;
+                height: 4em;
+
+            }
         }
     }
 }

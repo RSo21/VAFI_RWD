@@ -1,9 +1,14 @@
-# VAFI_SHOP
+# VAFI_SHOP_RWD
 
 This project is an exercise in creating a responsive website. Only
 desktop and mobile version. 
 
 mobile version -> in progress
+
+It's a landing page internet shop with paintings, clocks and mirrors (decorate the wall).
+
+The menu (mobile and desktop) is creating only in HTML and CSS. 
+I wanted to try power of CSS.
 
 ## Technologies
 

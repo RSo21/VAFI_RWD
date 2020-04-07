@@ -4,17 +4,34 @@
     padding: 2em 0 ;
 
         @include mobile {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            padding: 1em 0 ;
+
         }
     i{
         color: $icons;
         font-size: 1.5em;
         padding-left: 0.5em;
         padding-right: 0.5em;
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            font-size: 0.7em;
+        }
     }
 
     span{
         font-size: 0.8em;
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            font-size: 0.2em;
+            padding-top: 1.3em;
+            padding-bottom: 1.3em;
+        }
     }
 }
 
@@ -22,10 +39,10 @@
     display: flex;
     flex-direction: row;
 
-        @include mobile{
-            display: flex;
-            flex-direction: column;
-        }
+        // @include mobile{
+        //     display: flex;
+        //     flex-direction: column;
+        // }
 
 
     .pulpit-picture{
@@ -35,27 +52,26 @@
         width: 40%;
 
             @include mobile{
-                margin: 0;
-                padding-bottom: 0.1em;
+                margin-right: 0.2em;
+                padding-bottom: 0.2em;
+
             }
 
 
         img{
             box-sizing: border-box;
             padding: 0;
-            //width: 70%;
             height: auto;
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             border: 0.1em solid $icons;
-
             transition-duration: 2s;
             margin: 0;
             display: block;
 
                 @include mobile{
-                    max-width: 300%;
+                    border: 0.07em solid $icons;
                 }
 
             &:hover{
@@ -76,7 +92,7 @@
             width: 100%;
 
                 @include mobile{
-                    display: none;
+                    font-size: 0.4em;
                 }
         }
     }
