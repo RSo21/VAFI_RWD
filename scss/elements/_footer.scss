@@ -222,4 +222,9 @@
     &:hover{
         color: black;
     }
+
+    @include mobile{
+        bottom: 2em;
+        right: 2em; 
+    }
 }
