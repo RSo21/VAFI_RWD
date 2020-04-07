@@ -1,9 +1,9 @@
 # VAFI_SHOP_RWD
 
-## General info
-
 This project is an exercise in creating a responsive website. Only
 desktop and mobile version. 
+
+## General info
 
 It's a landing page internet shop with paintings, clocks and mirrors (decorate the wall).
 
