@@ -52,9 +52,9 @@
         width: 40%;
 
             @include mobile{
+                height: auto;
                 margin-right: 0.2em;
                 padding-bottom: 0.2em;
-
             }
 
 
@@ -71,6 +71,8 @@
             display: block;
 
                 @include mobile{
+                    width: 100%;
+                    height: auto;
                     border: 0.07em solid $icons;
                 }
 
