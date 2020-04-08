@@ -16,7 +16,7 @@ I wanted to try power of CSS.
 * CSS3
 * jQuery
 * SASS
-* Grid
+* Bootstrap
 
 ## Demo
 
