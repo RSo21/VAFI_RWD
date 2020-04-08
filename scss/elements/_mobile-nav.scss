@@ -1,11 +1,10 @@
-// @media only screen and (max-width: 979px) {
-    .mobile-nav{
-        display: block;
+.mobile-nav{
+    display: block;
 
-        @include desktop{
+     @include desktop{
             display: none;
-        }
     }
+}
 
 
 /*Func*/
@@ -35,9 +34,6 @@
     transition: 0.1s;
 }
 
-
-
-/*Styles*/
 
 label:hover {
     cursor: pointer;
@@ -75,7 +71,6 @@ label {
     padding: 0 0.25em;
 }
 .mobile-nav li a {
-    //line-height: 50px;
     margin: 0;
     padding: 0 4em;
     list-style: none;
