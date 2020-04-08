@@ -28,7 +28,6 @@ hr{
         width: 100%;
         font-size: 2em;
     }
-
 }
 
 .blog-text{
@@ -76,9 +75,7 @@ hr{
         @include mobile{
             width: 100%;
             font-size: 0.8em;
-        }
-
-        
+        }  
     }
 }
 
