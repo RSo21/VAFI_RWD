@@ -68,7 +68,6 @@
             width: 40%;
     
                 @include mobile{
-                    height: auto;
                     margin-right: 0.2em;
                     padding-bottom: 0.2em;
                 }
@@ -85,10 +84,12 @@
                 transition-duration: 2s;
                 margin: 0;
                 display: block;
+                width: 30em;
+                height: 20em;
     
                     @include mobile{
                         width: 100%;
-                        height: auto;
+                        height: 100%;
                         border: 0.07em solid $icons;
                     }
     
